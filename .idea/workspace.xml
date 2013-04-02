@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85d64bc6-c6e8-4a59-ab8b-d2663069355d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_3_170.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/layout.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/templates/layout.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/recipeDaB.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/recipe_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/recipe_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="recipe.iws" />
@@ -21,7 +17,7 @@
     <file path="/delete.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1363857653722" ignored="false" />
     <file path="/update.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1363857758946" ignored="false" />
     <file path="/settings.xml" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1364281947982" ignored="false" />
-    <file path="/Dummy.txt" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1364883423475" ignored="false" />
+    <file path="/Dummy.txt" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1364884268808" ignored="false" />
     <file path="/pom.xml" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1364454870413" ignored="false" />
     <file path="$USER_HOME$/work/circumflex/nm/src/main/webapp/templates/login.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1364799296234" ignored="false" />
     <file path="/login.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1364799285340" ignored="false" />
@@ -89,7 +85,7 @@
       <file leaf-file-name="add.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/add.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="44" selection-start="549" selection-end="591" vertical-scroll-proportion="0.0">
+            <state line="18" column="44" selection-start="549" selection-end="591" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -122,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipeDB.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/recipeDB.scala">
+      <file leaf-file-name="recipeDaB.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/recipeDaB.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="79" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.39246467">
+            <state line="49" column="1" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.9529042">
               <folding>
                 <element signature="e#20#57#0" expanded="true" />
               </folding>
@@ -182,6 +178,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/templates/layout.ftl" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/recipeDB.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/recipeDaB.scala" />
       </list>
     </option>
   </component>
@@ -196,8 +193,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="565" />
-    <option name="y" value="110" />
+    <option name="x" value="440" />
+    <option name="y" value="78" />
     <option name="width" value="949" />
     <option name="height" value="808" />
   </component>
@@ -229,6 +226,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -303,8 +302,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,6 +333,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -362,19 +372,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -411,6 +408,15 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <method />
     </configuration>
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
@@ -462,8 +468,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="565" y="110" width="949" height="808" extended-state="0" />
-    <editor active="true" />
+    <frame x="440" y="78" width="949" height="808" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -482,7 +488,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290559" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25027686" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25027686" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -592,7 +598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/add.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="549" selection-end="591" vertical-scroll-proportion="0.0">
+        <state line="18" column="44" selection-start="549" selection-end="591" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
@@ -638,9 +644,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/recipeDB.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/recipeDaB.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="79" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.39246467">
+        <state line="49" column="1" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.9529042">
           <folding>
             <element signature="e#20#57#0" expanded="true" />
           </folding>
