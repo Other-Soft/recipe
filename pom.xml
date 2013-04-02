@@ -125,7 +125,7 @@
 
           <configuration>
               <packages>
-                  <package>org.test</package>
+                  <package>org.recipe</package>
               </packages>
           </configuration>
 

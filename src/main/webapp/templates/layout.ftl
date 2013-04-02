@@ -32,7 +32,11 @@
     </div>
     <div id="outer">
       <div id="content">
+        <div class="letterbox">
+          <div class="wrap pad content-output">
         ${content}
+          </div>
+        </div>
       </div>
       <div id="footer">
         <span class="copyright">2008-${currentDate?string("yyyy")}</span> ©

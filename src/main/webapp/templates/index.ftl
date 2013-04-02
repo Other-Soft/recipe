@@ -2,12 +2,31 @@
 
 [#assign content]
 <h1>Книга Рецептов</h1>
-<p>мы ели мясо...
-<input name="Button" type="button" value="Добавить" onclick="top.location.href='/add'" />
+<p>мы ели мясо... </p>
+
+<a href="/add"
+   class="btn btn-primary"
+   title="мясо">мясо</a>
+
+<div class="right-float">
+  <a href="/add"
+     title="${msg['rec.add']}"
+     class="btn primary"> ${msg['rec.add']}
+  </a>
+
+  <a href="/"
+     class="btn btn primary"
+     title="${msg['rec.view']}">${msg['rec.view']}
+
+  </a>
+</div>
+
+
+
 <input name="Button" type="button" value="Просмотреть" onclick="top.location.href='/read'" />
 <input name="Button" type="button" value="Удалить" onclick="top.location.href='/delete'" />
 <input name="Button" type="button" value="Изменить" onclick="top.location.href='/update'" />
-</p>
+
 <ul>
   <li><strong>Книга рецептов</strong>
     &mdash; этот сайт предназначен для хранения всевозможных рецептов кулинарных блюд,

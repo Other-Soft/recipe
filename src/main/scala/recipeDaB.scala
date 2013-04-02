@@ -2,7 +2,6 @@ package org.recipe
 
 import pro.savant.circumflex._, orm._
 import java.util.Date
-import tools.nsc.backend.icode.analysis.CopyPropagation.Record
 
 class recipeDB
     extends Record[Long, recipeDB]
@@ -12,39 +11,42 @@ class recipeDB
   def relation: Relation[Long, recipeDB] = recipeDB
 
   val id = "id".BIGINT.NOT_NULL.AUTO_INCREMENT
-  val dishname = "dishname".HTML.NOT_NULL
-  val nationalattach = "national_attach".HTML
-  val numberofperson = "number_of_person".HTML.NOT_NULL
+  val dishName = "dish_name".HTML.NOT_NULL
+  val nationAlattach = "national_attach".HTML
+  val numberOfPerson = "number_of_person".HTML.NOT_NULL
   val specifecation = "specification".HTML.NOT_NULL
-  val waycooking = "waycooking".HTML.NOT_NNULL
-  val timecooking = "timecooking".HTML.NOT_NULL
+  val wayCooking = "way_cooking".HTML.NOT_NULL
+  val timeCooking = "time_cooking".HTML.NOT_NULL
   val complexity = "complexity".HTML.NOT_NULL
-  val caloricvalue = "caloricvalue".HTML.NOT_NULL
+  val caloricValue = "caloric_value".HTML.NOT_NULL
 }
 
 object recipeDB extends recipeDB with Table[Long, recipeDB] {
-  val uniqueDishname = UNIQUE(dishname)
+  val uniqueDishname = UNIQUE(dishName)
 
   validation
-      .unique(_.dishname)
-      .notEmpty(_.dishname)
-      .notEmpty(_.numberofperson)
+      .unique(_.dishName)
+      .notEmpty(_.dishName)
+      .notEmpty(_.numberOfPerson)
       .notEmpty(_.specifecation)
-      .notEmpty(_.waycooking)
-      .notEmpty(_.timecooking)
+      .notEmpty(_.wayCooking)
+      .notEmpty(_.timeCooking)
       .notEmpty(_.complexity)
-      .notEmpty(_.caloricvalue)
+      .notEmpty(_.caloricValue)
 
   private val r = recipeDB AS "r"
 
   def findByDishname(dishname: String) =
     SELECT(r.*)
         .FROM(r)
-        .WHERE(r.dishname EQ dishname)
+        .WHERE(r.dishName EQ dishname)
         .unique()
   def findByTimecooking(Timecooking: String) =
     SELECT(r.*)
         .FROM(r)
-        .WHERE(r.timecooking LLIKE)
+        .WHERE(r.timeCooking LLIKE(Timecooking + "%"))
         .list()
 }
+
+
+

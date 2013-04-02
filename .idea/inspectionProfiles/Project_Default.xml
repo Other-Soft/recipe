@@ -4,5 +4,6 @@
     <option name="myLocal" value="false" />
     <inspection_tool class="ScalaFileName" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ScalaPackageName" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnusedProperty" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>
