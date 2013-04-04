@@ -28,20 +28,28 @@
     <title>Simple Circumflex Application</title>
   </head>
   <body>
+  [#assign notices = flash['notices']![]]
+    <div id="notices">
+    [#list notices as n]
+      <div class="notice ${n.kind}">
+      ${n.msg}
+      </div>
+    [/#list]
+    </div>
     <div id="header">
     </div>
     <div id="outer">
       <div id="content">
         <div class="letterbox">
           <div class="wrap pad content-output">
-        ${content}
+          ${content}
           </div>
         </div>
       </div>
       <div id="footer">
         <span class="copyright">2008-${currentDate?string("yyyy")}</span> ©
         <a class="home" href="http://${request.headers['Host']!"localhost"}">
-          ${request.headers['Host']!"localhost"}
+        ${request.headers['Host']!"localhost"}
         </a>
       </div>
     </div>

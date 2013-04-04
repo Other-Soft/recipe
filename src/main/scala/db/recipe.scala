@@ -1,40 +1,39 @@
 package org.recipe
 
 import pro.savant.circumflex._, orm._
-import java.util.Date
 
-class recipeDB
-    extends Record[Long, recipeDB]
-    with IdentityGenerator[Long, recipeDB] {
+class Recipe
+    extends Record[Long, Recipe]
+    with IdentityGenerator[Long, Recipe] {
 
-  def PRIMARY_KEY: ValueHolder[Long, recipeDB] = id
-  def relation: Relation[Long, recipeDB] = recipeDB
+  def PRIMARY_KEY: ValueHolder[Long, Recipe] = id
+  def relation: Relation[Long, Recipe] = Recipe
 
   val id = "id".BIGINT.NOT_NULL.AUTO_INCREMENT
   val dishName = "dish_name".HTML.NOT_NULL
-  val nationAlattach = "national_attach".HTML
+  val nationalAttach = "national_attach".HTML
   val numberOfPerson = "number_of_person".HTML.NOT_NULL
-  val specifecation = "specification".HTML.NOT_NULL
+  val specification = "specification".HTML.NOT_NULL
   val wayCooking = "way_cooking".HTML.NOT_NULL
   val timeCooking = "time_cooking".HTML.NOT_NULL
   val complexity = "complexity".HTML.NOT_NULL
   val caloricValue = "caloric_value".HTML.NOT_NULL
 }
 
-object recipeDB extends recipeDB with Table[Long, recipeDB] {
+object Recipe extends Recipe with Table[Long, Recipe] {
   val uniqueDishname = UNIQUE(dishName)
 
   validation
       .unique(_.dishName)
       .notEmpty(_.dishName)
       .notEmpty(_.numberOfPerson)
-      .notEmpty(_.specifecation)
+      .notEmpty(_.specification)
       .notEmpty(_.wayCooking)
       .notEmpty(_.timeCooking)
       .notEmpty(_.complexity)
       .notEmpty(_.caloricValue)
 
-  private val r = recipeDB AS "r"
+  private val r = Recipe AS "r"
 
   def findByDishname(dishname: String) =
     SELECT(r.*)

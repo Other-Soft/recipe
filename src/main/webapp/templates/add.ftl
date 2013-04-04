@@ -6,9 +6,9 @@
   <h2>Здесь вы можете создавать и добавлять свои рецепты<br /><small>но пока тут мышь повесилась...</small></h2>
 </div>
 
-<form action="/add"
+<form action="/"
       method="post"
-      class="submission content-output" >
+      class="submission" >
 
 
 
@@ -26,12 +26,12 @@
     </div>
 
   <div class="grid">
-    <div class="w50"
+    <div class="w25"
     <label for="i">Перечислите ингридиенты с указанием веса в граммах</label>
     <div class="field">
       <div class="field-area">
         <textarea id="i"
-                  rows="5"
+                  rows="8"
                   type="text"
                   name="i"></textarea>
       </div>
@@ -74,7 +74,6 @@
                    name="na"/>
           </div>
         </div>
-
       </div>
     </div>
     <div class="w25">
@@ -84,26 +83,13 @@
           <div class="input">
             <input id="p"
                    type="text"
-
                    name="p"/>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="w25">
-      <div class="fieldbox">
-        <label for="с">калорийность</label>
-        <div class="field">
-          <div class="input">
-            <input id="с"
-                   type="text"
 
-                   name="с"/>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="w25">
       <div class="fieldbox">
@@ -118,13 +104,39 @@
         </div>
       </div>
     </div>
+    <div class="w25">
+      <div class="fieldbox">
+        <label for="v">калорийность</label>
+        <div class="field">
+          <div class="input">
+            <input id="v"
+                   type="text"
+                   name="v"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="w25">
+    <div class="fieldbox">
+      <label for="c">сложность</label>
+      <div class="field">
+        <div class="input">
+          <input id="c"
+                 type="text"
+                 name="c"/>
+        </div>
+      </div>
+    </div>
 
   </div>
+
+  </div>
+
 
   <div class="submits margin-top centered">
     <input type="submit"
            class="btn primary inverse"
-           value="Добавить"/>
+           value="${msg['rec.add']}"/>
 
   </div>
 

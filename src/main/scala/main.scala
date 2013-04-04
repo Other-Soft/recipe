@@ -8,15 +8,35 @@ class Main extends Router {
 
   'currentDate := new Date
 
-  get("/test") = "I'm fine, thanks!"
-  get("/") = ftl("index.ftl")
+  get("/") = ftl("/index.ftl")
 
   get("/add") = ftl("/add.ftl")
-  get("/read") = ftl("/read.ftl")
-  get("/delete") = ftl("/delete.ftl")
-  get("/update") = ftl("/update.ftl")
-  get("/my-route")  = ftl("/my-route.ftl")
+  get("/list") = ftl("/list.ftl")
 
-  get("/*.html") = ftl("/" + uri(1) + ".ftl")
+  post("/?") = {
+    try {
+      val r = new Recipe
+      r.dishName:= param("n").trim
+      r.nationalAttach:= param("na").trim
+      r.numberOfPerson:= param("p").trim
+      r.specification:= param("s").trim
+      r.wayCooking:= param("w").trim
+      r.timeCooking:= param("t").trim
+      r.caloricValue:= param("v").trim
+      r.complexity:= param("c").trim
+      r.save()
+      sendRedirect("/" + r.id())
+    } catch {
+      case e: ValidationException =>
+        notices.addErrors(e.errors)
+        sendRedirect("/add")
+    }
+  }
+
+  sub("/:id") = {
+    get("/?") = ftl("/view.ftl")
+    get("/~edit") = ftl("/edit.ftl")
+    get("/~delete") = ftl("/delete.ftl")
+  }
 
 }

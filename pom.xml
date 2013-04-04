@@ -46,11 +46,11 @@
       <version>2.5</version>
       <scope>provided</scope>
     </dependency>
-      <dependency>
-          <groupId>com.h2database</groupId>
-          <artifactId>h2</artifactId>
-          <version>1.3.170</version>
-      </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.3.170</version>
+    </dependency>
     <!-- Logging -->
     <dependency>
       <groupId>ch.qos.logback</groupId>
@@ -122,13 +122,11 @@
         <groupId>pro.savant.circumflex</groupId>
         <artifactId>maven-cx-plugin</artifactId>
         <version>${cx.version}</version>
-
-          <configuration>
-              <packages>
-                  <package>org.recipe</package>
-              </packages>
-          </configuration>
-
+        <configuration>
+          <packages>
+            <package>org.recipe</package>
+          </packages>
+        </configuration>
         <executions>
           <execution>
             <id>configure</id>
