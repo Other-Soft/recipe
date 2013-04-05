@@ -11,7 +11,10 @@ class Main extends Router {
   get("/") = ftl("/index.ftl")
 
   get("/add") = ftl("/add.ftl")
-  get("/list") = ftl("/list.ftl")
+  get("/list") = {
+    'recipes := Recipe.all
+    ftl("/list.ftl")
+  }
 
   post("/?") = {
     try {
@@ -34,9 +37,36 @@ class Main extends Router {
   }
 
   sub("/:id") = {
+    //fetch recipe
+
+    val recipe = try {
+      Recipe.get(param("id").toLong).getOrElse(sendError(404))
+    } catch {
+      case e: NumberFormatException => sendError(404)
+    }
+    'recipe := recipe
+
     get("/?") = ftl("/view.ftl")
+
     get("/~edit") = ftl("/edit.ftl")
+    post("/?") = {
+      recipe.dishName:=param("n").trim
+      recipe.nationalAttach:= param("na").trim
+      recipe.numberOfPerson:= param("p").trim
+      recipe.specification:= param("s").trim
+      recipe.wayCooking:= param("w").trim
+      recipe.timeCooking:= param("t").trim
+      recipe.caloricValue:= param("v").trim
+      recipe.complexity:= param("c").trim
+      recipe.save()
+      sendRedirect("/"+ recipe.id())
+    }
+
     get("/~delete") = ftl("/delete.ftl")
+    delete("/?") = {
+      recipe.DELETE_!()
+      sendRedirect("/list")
+    }
   }
 
 }

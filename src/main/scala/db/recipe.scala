@@ -35,6 +35,8 @@ object Recipe extends Recipe with Table[Long, Recipe] {
 
   private val r = Recipe AS "r"
 
+
+
   def findByDishname(dishname: String) =
     SELECT(r.*)
         .FROM(r)

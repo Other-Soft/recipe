@@ -1,7 +1,7 @@
 [#ftl]
 
 [#assign content]
-<h1>Книга Рецептов</h1>
+<h1>${msg["main.title"]}</h1>
 <p>мы ели мясо... </p>
 
 <div class="right-float">
@@ -11,20 +11,13 @@
      class="btn primary inverse"> ${msg['rec.add']}
   </a>
 
-  <a href="/read"
+  <a href="/list"
      class="btn primary "
-     title="${msg['rec.view']}">${msg['rec.view']}
+     title="${msg['rec.list']}">${msg['rec.list']}
   </a>
 
-  <a href="/delete"
-      title="${msg['rec.delete']}"
-      class="btn primary">${msg['rec.delete']}
-  </a>
 
-  <a href="/update"
-     title="${msg['rec.edit']}"
-     class="btn primary inverse">${msg['rec.edit']}
-  </a>
+
 </div>
 </br>
 
@@ -44,8 +37,8 @@
   </li>
   <li><strong>Ниже представлены основные функции которые вы можете делать с рецептами:</strong>
     <ul>
-      <li><strong>Добавить</strong>
-        &mdash; мы работаем над этим...</li>
+      <li><strong>${msg["rec.add"]}</strong>
+        &mdash; ${msg["rec.add.description"]}</li>
       <li><strong>Просмотреть</strong>
         &mdash;и над этим мы тоже пока работаем...
 
@@ -62,4 +55,4 @@
 <p style="font-weight:bold">Приятного аппетита и не забудьте сказать спасибо !</p>
 [/#assign]
 
-[#include "/layout.ftl"/]
+[#include "layout.ftl"/]
