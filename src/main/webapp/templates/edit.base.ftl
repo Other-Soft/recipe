@@ -67,7 +67,7 @@
   </div>
   <div class="w25">
     <div class="fieldbox">
-      <label for="p">количество персон</label>
+      <label for="p">${msg["rec.create.numberOfPerson"]}</label>
       <div class="field">
         <div class="input">
           <input id="p"
@@ -80,7 +80,7 @@
   </div>
   <div class="w25">
     <div class="fieldbox">
-      <label for="t">время готовки</label>
+      <label for="t">${msg["rec.create.timeCooking"]}</label>
       <div class="field">
         <div class="input">
           <input id="t"
@@ -89,12 +89,22 @@
                  value="${recipe.timeCooking!}"
                  name="t"/>
         </div>
+        <div class="input">
+          <div class="input">
+            <select id="st"
+                    class="select2"
+                    name="st">
+              <option>${recipe.timeCooking!}</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="w25">
     <div class="fieldbox">
-      <label for="v">калорийность</label>
+      <label for="v">${msg["rec.create.caloric"]}</label>
       <div class="field">
         <div class="input">
           <input id="v"
@@ -107,7 +117,7 @@
   </div>
   <div class="w25">
     <div class="fieldbox">
-      <label for="c">сложность</label>
+      <label for="c">${msg["rec.create.complexity"]}</label>
       <div class="field">
         <div class="input">
           <input id="c"

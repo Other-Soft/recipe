@@ -10,11 +10,18 @@ class Main extends Router {
 
   get("/") = ftl("/index.ftl")
 
+  get("/locale.js") = {
+    serveLastModified(msg.lastModified)
+    response.contentType("application/javascript")
+    ftl("/locale/locale.js.ftl")
+  }
+
   get("/add") = ftl("/add.ftl")
   get("/list") = {
     'recipes := Recipe.all
     ftl("/list.ftl")
   }
+
 
   post("/?") = {
     try {
