@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85d64bc6-c6e8-4a59-ab8b-d2663069355d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/templates/locale/locale.js.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/templates/locale/rec.local.index.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/time.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/ForXml.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/index.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/templates/index.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/layout.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/templates/layout.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/main.scala" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/msg.properties" afterPath="$PROJECT_DIR$/src/main/resources/msg.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/time.xml" afterPath="$PROJECT_DIR$/src/main/resources/time.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="recipe.iws" />
@@ -48,12 +43,13 @@
     <file path="$PROJECT_DIR$/../scalaqa/src/main/webapp/templates/questions/list.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365141164312" ignored="false" />
     <file path="$PROJECT_DIR$/../scalaqa/src/main/scala/main.scala" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365143339697" ignored="false" />
     <file path="$PROJECT_DIR$/../work/circumflex/nm/src/main/webapp/templates/applications/delete.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365400757351" ignored="false" />
-    <file path="/edit.base.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365408647970" ignored="false" />
+    <file path="/edit.base.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365410183200" ignored="false" />
     <file path="/edit.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365154569184" ignored="false" />
     <file path="/weigh.xml" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365156485363" ignored="false" />
-    <file path="/time.xml" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365398955281" ignored="false" />
+    <file path="/time.xml" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365408944333" ignored="false" />
     <file path="/rec.local.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365400896981" ignored="false" />
     <file path="/locale.js.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365406266778" ignored="false" />
+    <file path="/ForXml.scala" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365415064299" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +111,29 @@
       <file leaf-file-name="main.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="23" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
+            <state line="20" column="26" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#20#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForXml.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ForXml.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="25" selection-start="297" selection-end="297" vertical-scroll-proportion="0.27659574">
+              <folding>
+                <element signature="e#20#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recipe.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/db/Recipe.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="6" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,7 +142,7 @@
       <file leaf-file-name="locale.js.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/locale/locale.js.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="12" selection-start="168" selection-end="168" vertical-scroll-proportion="-4.375">
+            <state line="7" column="42" selection-start="168" selection-end="168" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
@@ -134,7 +152,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/index.ftl">
           <provider selected="true" editor-type-id="text-editor">
             <state line="51" column="11" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-24.625">
-              <folding />
+              <folding>
+                <marker date="1365400839000" expanded="false" signature="932:948" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,43 +162,16 @@
       <file leaf-file-name="rec.local.index.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/locale/rec.local.index.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="61" selection-start="449" selection-end="449" vertical-scroll-proportion="-7.5">
+            <state line="12" column="43" selection-start="449" selection-end="449" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weight.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/weight.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="10" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="time.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/time.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.base.ftl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.base.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="53" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.49339208">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/layout.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="58" selection-start="802" selection-end="802" vertical-scroll-proportion="-15.0">
+            <state line="1" column="85" selection-start="7" selection-end="7" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -220,13 +213,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/templates/delete.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/view.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/add.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/edit.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/weigh.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/weight.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/time.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/location/rec.local.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/location/rec.local.index.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/index.ftl" />
@@ -235,7 +226,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/templates/layout.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/locale/locale.js.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/msg.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/time.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl" />
+        <option value="$PROJECT_DIR$/src/main/scala/ForXml.scala" />
       </list>
     </option>
   </component>
@@ -250,8 +243,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="779" />
-    <option name="y" value="137" />
+    <option name="x" value="407" />
+    <option name="y" value="220" />
     <option name="width" value="945" />
     <option name="height" value="876" />
   </component>
@@ -461,6 +454,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Recipe.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -643,7 +666,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="779" y="137" width="945" height="876" extended-state="0" />
+    <frame x="407" y="220" width="945" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -732,65 +755,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="38" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/add.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="16" selection-end="16" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/edit.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/db/Recipe.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/view.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="50" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/delete.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="25" selection-start="393" selection-end="393" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/weight.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/time.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/locale/rec.local.index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="61" selection-start="449" selection-end="449" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
@@ -805,28 +772,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="11" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-24.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="23" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/locale/locale.js.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="168" selection-end="168" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/layout.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="58" selection-start="802" selection-end="802" vertical-scroll-proportion="-15.0">
-          <folding />
+          <folding>
+            <marker date="1365400839000" expanded="false" signature="932:948" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -837,10 +785,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/locale/locale.js.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="42" selection-start="168" selection-end="168" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/weight.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="40" selection-end="118" vertical-scroll-proportion="0.12765957">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/time.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="99" selection-end="99" vertical-scroll-proportion="0.10638298">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/layout.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="17" selection-start="767" selection-end="800" vertical-scroll-proportion="0.46255508">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.jar!/scala/tools/nsc/doc/html/resource/lib/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="5995" selection-start="6048" selection-end="6048" vertical-scroll-proportion="0.0216763">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/db/Recipe.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0_30-b12-404.jdk/Contents/Home/src.jar!/src/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="11" selection-start="9235" selection-end="9235" vertical-scroll-proportion="0.33236995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="53" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.49339208">
+        <state line="1" column="85" selection-start="7" selection-end="7" vertical-scroll-proportion="-0.625">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/locale/rec.local.index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="43" selection-start="449" selection-end="449" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="26" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#20#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="58" selection-start="356" selection-end="356" vertical-scroll-proportion="0.13513513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ForXml.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="25" selection-start="297" selection-end="297" vertical-scroll-proportion="0.27659574">
+          <folding>
+            <element signature="e#20#79#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

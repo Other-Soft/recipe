@@ -1,1 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<times>
+  <time t.id="min"/>
+  <time t.id="hour"/>
+</times>

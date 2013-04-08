@@ -129,3 +129,9 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  eaui.addListener("#st", function(){
+    $("#st").data("select2-dropdown-css", { "width": "240px" } )
+  });
+</script>
