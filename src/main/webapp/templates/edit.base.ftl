@@ -85,7 +85,7 @@
         <div class="input">
           <input id="t"
                  type="text"
-                 placeholder="в минутах"
+                 placeholder=""
                  value="${recipe.timeCooking!}"
                  name="t"/>
         </div>
@@ -94,8 +94,9 @@
             <select id="st"
                     class="select2"
                     name="st">
-              <option>${recipe.timeCooking!}</option>
-              <option>...</option>
+              [#list conf.times.children as t]
+                <option value="${t.id}" selected="selected">${t.title}</option>
+              [/#list]
             </select>
           </div>
         </div>

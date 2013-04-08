@@ -16,7 +16,11 @@ class Main extends Router {
     ftl("/locale/locale.js.ftl")
   }
 
-  get("/add") = ftl("/add.ftl")
+  get("/add") = {
+    'conf := conf
+    ftl("/add.ftl")
+  }
+
   get("/list") = {
     'recipes := Recipe.all
     ftl("/list.ftl")

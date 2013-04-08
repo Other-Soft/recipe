@@ -37,6 +37,11 @@
     </dependency>
     <dependency>
       <groupId>pro.savant.circumflex</groupId>
+      <artifactId>circumflex-xml</artifactId>
+      <version>${cx.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>pro.savant.circumflex</groupId>
       <artifactId>circumflex-orm</artifactId>
       <version>${cx.version}</version>
     </dependency>
