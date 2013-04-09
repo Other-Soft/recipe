@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="85d64bc6-c6e8-4a59-ab8b-d2663069355d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/main.scala" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/msg.properties" afterPath="$PROJECT_DIR$/src/main/resources/msg.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/db/recipe.scala" afterPath="$PROJECT_DIR$/src/main/scala/db/recipe.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/view.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/templates/view.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="recipe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +40,7 @@
     <file path="$PROJECT_DIR$/../scalaqa/src/main/webapp/templates/questions/list.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365141164312" ignored="false" />
     <file path="$PROJECT_DIR$/../scalaqa/src/main/scala/main.scala" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365143339697" ignored="false" />
     <file path="$PROJECT_DIR$/../work/circumflex/nm/src/main/webapp/templates/applications/delete.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365400757351" ignored="false" />
-    <file path="/edit.base.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365497817391" ignored="false" />
+    <file path="/edit.base.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365497929190" ignored="false" />
     <file path="/edit.ftl" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365486649043" ignored="false" />
     <file path="/weigh.xml" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365156485363" ignored="false" />
     <file path="/time.xml" changelist="85d64bc6-c6e8-4a59-ab8b-d2663069355d" time="1365408944333" ignored="false" />
@@ -143,19 +138,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipe.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="recipe.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/db/recipe.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+            <state line="22" column="29" selection-start="759" selection-end="759" vertical-scroll-proportion="0.24822696">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.base.ftl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.base.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="40" selection-start="2553" selection-end="2553" vertical-scroll-proportion="0.33039647">
+            <state line="97" column="37" selection-start="2550" selection-end="2550" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
@@ -220,8 +215,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/main.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/msg.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/view.ftl" />
-        <option value="$PROJECT_DIR$/src/main/scala/db/recipe.scala" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl" />
+        <option value="$PROJECT_DIR$/src/main/scala/db/recipe.scala" />
       </list>
     </option>
   </component>
@@ -884,16 +879,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/db/recipe.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+        <state line="97" column="37" selection-start="2550" selection-end="2550" vertical-scroll-proportion="-9.375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/edit.base.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/db/recipe.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="40" selection-start="2553" selection-end="2553" vertical-scroll-proportion="0.33039647">
+        <state line="22" column="29" selection-start="759" selection-end="759" vertical-scroll-proportion="0.24822696">
           <folding />
         </state>
       </provider>

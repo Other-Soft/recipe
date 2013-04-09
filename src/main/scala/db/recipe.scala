@@ -20,7 +20,7 @@ class Recipe
   val complexity = "complexity".HTML.NOT_NULL
   val caloricValue = "caloric_value".HTML.NOT_NULL
 
-
+  def timeType = conf._times.
 
 }
 
