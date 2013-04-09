@@ -95,7 +95,7 @@
                     class="select2"
                     name="st">
               [#list conf.times.children as t]
-                <option value="${t.id}" selected="selected">${t.title}</option>
+                <option value="${t.title}" selected="selected">${t.title}</option>
               [/#list]
             </select>
           </div>

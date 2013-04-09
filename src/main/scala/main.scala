@@ -37,7 +37,7 @@ class Main extends Router {
       r.specification:= param("s").trim
       r.wayCooking:= param("w").trim
       r.timeCooking:= param("t").trim
-      r.timeType:= param("st").trim
+      r._timeType:= param("st").trim
       r.caloricValue:= param("v").trim
       r.complexity:= param("c").trim
       r.save()
@@ -69,6 +69,7 @@ class Main extends Router {
       recipe.specification:= param("s").trim
       recipe.wayCooking:= param("w").trim
       recipe.timeCooking:= param("t").trim
+      recipe._timeType:= param("st").trim
       recipe.caloricValue:= param("v").trim
       recipe.complexity:= param("c").trim
       recipe.save()

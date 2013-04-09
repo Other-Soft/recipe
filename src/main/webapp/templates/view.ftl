@@ -4,14 +4,13 @@
 <h1>${msg["view.h1"]}</h1>
 
 <h2>${recipe.dishName}</h2>
-<p>${recipe.specification}</p>
+<p>${msg["rec.specification"]} ${recipe.specification}</p>
 <p>${recipe.wayCooking}</p>
-<p>${recipe.numberOfPerson}</p>
-<p>${recipe.timeCooking}</p>
-<p>${recipe.timeType}</p>
-<p>${recipe.caloricValue}</p>
-<p>${recipe.nationalAttach}</p>
-<p>${recipe.complexity}</p>
+<p>${msg["rec.create.numberOfPerson"]}: ${recipe.numberOfPerson}</p>
+<p>${msg["rec.create.timeCooking"]}: ${recipe.timeCooking} ${recipe._timeType}</p>
+<p>${msg["rec.create.caloric"]}: ${recipe.caloricValue}</p>
+<p>${msg["rec.create.nationalAttach"]}: ${recipe.nationalAttach}</p>
+<p>${msg["rec.create.complexity"]}: ${recipe.complexity}</p>
 <div class="left-float">
 <a href="/${recipe.id}/~delete"
    class="btn important inverse"
