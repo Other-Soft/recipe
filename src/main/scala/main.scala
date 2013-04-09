@@ -7,6 +7,7 @@ class Main extends Router {
   val log = new Logger("org.recipe")
 
   'currentDate := new Date
+  'conf := conf
 
   get("/") = ftl("/index.ftl")
 
@@ -17,7 +18,7 @@ class Main extends Router {
   }
 
   get("/add") = {
-    'conf := conf
+
     ftl("/add.ftl")
   }
 
@@ -36,6 +37,7 @@ class Main extends Router {
       r.specification:= param("s").trim
       r.wayCooking:= param("w").trim
       r.timeCooking:= param("t").trim
+      r.timeType:= param("st").trim
       r.caloricValue:= param("v").trim
       r.complexity:= param("c").trim
       r.save()

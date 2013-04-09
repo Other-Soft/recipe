@@ -3,7 +3,7 @@
 [#assign recipe = recipe!{}/]
 
 <div class="fieldbox">
-  <label for="n">Ведите название рецепта</label>
+  <label for="n">${msg["rec.create.dishName"]}</label>
   <div class="field">
     <div class="input">
       <input id="n"
@@ -17,7 +17,7 @@
 </div>
 <div class="grid">
   <div class="w25"
-  <label for="i">Перечислите ингридиенты с указанием веса в граммах</label>
+  <label for="i">${msg["rec.create.ingredient"]}</label>
   <div class="field">
     <div class="field-area">
       <textarea id="i"
@@ -29,7 +29,7 @@
 </div>
 </div>
 <div class="fieldbox">
-  <label for="s">Введите краткое описание блюда</label>
+  <label for="s">${msg["rec.create.specification"]}</label>
   <div class="field">
     <div class="field-area">
       <textarea id="s"
@@ -40,7 +40,7 @@
   </div>
 </div>
 <div class="fieldbox">
-  <label for="w">Опишите способ приготовления</label>
+  <label for="w">${msg["rec.create.wayCooking"]}</label>
   <div class="field">
     <div class="field-area">
       <textarea id="w"
@@ -54,7 +54,7 @@
 <div class="grid">
   <div class="w25">
     <div class="fieldbox">
-      <label for="na">национальность блюда</label>
+      <label for="na">${msg["rec.create.nationalAttach"]}</label>
       <div class="field">
         <div class="input">
           <input id="na"

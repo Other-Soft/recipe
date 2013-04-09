@@ -1,10 +1,17 @@
 [#ftl]
 
 [#assign content]
-<h1>Просмотр рецепта</h1>
+<h1>${msg["view.h1"]}</h1>
 
 <h2>${recipe.dishName}</h2>
 <p>${recipe.specification}</p>
+<p>${recipe.wayCooking}</p>
+<p>${recipe.numberOfPerson}</p>
+<p>${recipe.timeCooking}</p>
+<p>${recipe.timeType}</p>
+<p>${recipe.caloricValue}</p>
+<p>${recipe.nationalAttach}</p>
+<p>${recipe.complexity}</p>
 <div class="left-float">
 <a href="/${recipe.id}/~delete"
    class="btn important inverse"

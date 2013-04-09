@@ -3,7 +3,7 @@
 [#assign content]
 
 <div class="page-header">
-  <h2>Здесь вы можете создавать и добавлять свои рецепты<br /><small>но пока тут мышь повесилась...</small></h2>
+  <h2>${msg["rec.add.head"]}<br /><small>${msg["rec.add.head.small"]}</small></h2>
 </div>
 <form action="/"
       method="post"
@@ -15,7 +15,7 @@
            value="${msg['rec.add']}"/>
   </div>
 </form>
-<a href="/">На главную</a>
+<a href="/">${msg["on.main"]}</a>
 [/#assign]
 
 [#include "layout.ftl"/]

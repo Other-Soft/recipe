@@ -16,6 +16,7 @@ class Recipe
   val specification = "specification".HTML.NOT_NULL
   val wayCooking = "way_cooking".HTML.NOT_NULL
   val timeCooking = "time_cooking".HTML.NOT_NULL
+  val timeType = "time_type".HTML.NOT_NULL
   val complexity = "complexity".HTML.NOT_NULL
   val caloricValue = "caloric_value".HTML.NOT_NULL
 }
@@ -30,6 +31,7 @@ object Recipe extends Recipe with Table[Long, Recipe] {
       .notEmpty(_.specification)
       .notEmpty(_.wayCooking)
       .notEmpty(_.timeCooking)
+      .notEmpty(_.timeType)
       .notEmpty(_.complexity)
       .notEmpty(_.caloricValue)
 

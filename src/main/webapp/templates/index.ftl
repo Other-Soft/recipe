@@ -2,50 +2,31 @@
 
 [#assign content]
 <h1>${msg["main.title"]}</h1>
-<p>мы ели мясо... </p>
-
+<p>${msg["index.p1"]}</p>
 <div class="right-float">
-
   <a href="/add"
      title="${msg['rec.add']}"
      class="btn primary inverse"> ${msg['rec.add']}
   </a>
-
   <a href="/list"
      class="btn primary "
      title="${msg['rec.list']}">${msg['rec.list']}
   </a>
-
-
-
 </div>
-</br>
-
-
-
-
-
 <ul>
   <li> [#include "locale/rec.local.index.ftl"/]
   </li>
-  <li><strong>Ниже представлены основные функции которые вы можете делать с рецептами:</strong>
+  <li><strong>${msg["index.functions"]}</strong>
     <ul>
       <li><strong>${msg["rec.add"]}</strong>
         &mdash; ${msg["rec.add.description"]}</li>
-      <li><strong>Просмотреть</strong>
-        &mdash;и над этим мы тоже пока работаем...
-
-      </li>
-      <li><strong>Удалить</strong>
-        &mdash; ну вы понимаете, что впринцепи тут так же...</li>
-      <li><strong>Изменить</strong>
-        &mdash; и да, над этим мы тоже работаем...</li>
+      <li><strong>${msg["rec.view"]}</strong></li>
+      <li><strong>${msg["rec.delete"]}</strong></li>
+      <li><strong>${msg["rec.edit"]}</strong></li>
     </ul>
   </li>
-
 </ul>
-
-<p style="font-weight:bold">Приятного аппетита и не забудьте сказать спасибо !</p>
+<p style="font-weight:bold">${msg["index.p2"]}</p>
 [/#assign]
 
 [#include "layout.ftl"/]

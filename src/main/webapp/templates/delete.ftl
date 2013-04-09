@@ -14,13 +14,8 @@
     <a href="/${recipe.id}">${msg['cancel']}</a>
   </div>
       </form>
-
-
 <p>...</p>
-
-
-
-<a href="/">На главную</a>
+<a href="/">${msg["on.main"]}</a>
 [/#assign]
 
 [#include "layout.ftl"/]
