@@ -20,7 +20,7 @@ class Recipe
   val complexity = "complexity".HTML.NOT_NULL
   val caloricValue = "caloric_value".HTML.NOT_NULL
 
-  def timeType = conf._times.
+
 
 }
 
@@ -53,6 +53,38 @@ object Recipe extends Recipe with Table[Long, Recipe] {
         .WHERE(r.timeCooking LLIKE(Timecooking + "%"))
         .list()
 }
+
+class Ingredient
+    extends Record[Long, Ingredient]
+    with IdentityGenerator[Long, Ingredient] {
+
+
+  def PRIMARY_KEY: ValueHolder[Long, Ingredient] = id
+
+  def relation: Relation[Long, Ingredient] = Ingredient
+
+  val id = "id".BIGINT.NOT_NULL.AUTO_INCREMENT
+  val recipe = "recipe_id".BIGINT.NOT_NULL
+     .REFERENCES(Recipe).ON_DELETE(CASCADE).ON_UPDATE(CASCADE)
+  val ingredientName = "ingredient_name".HTML.NOT_NULL
+  val ingredientType = "ingr_Type".HTML
+  val weight = "weight".HTML.NOT_NULL
+}
+
+object Ingredient
+    extends Ingredient
+    with Table[Long, Ingredient] {
+  val ingredientUniqueKey = UNIQUE(ingredient)
+
+  validation
+      .notEmpty(_.ingredientName)
+      .notEmpty(_.weight)
+
+}
+
+
+
+
 
 
 

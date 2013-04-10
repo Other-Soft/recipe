@@ -15,6 +15,33 @@
            value="${msg['rec.add']}"/>
   </div>
 </form>
+
+
+<form action="/ingr"
+      method="post"
+      class="submission" >
+<input type="submit"
+       class="btn"
+       value="${msg['rec.add']}"/>
+
+<label for="i">${msg["rec.create.ingredient"]}</label>
+<div class="field">
+  <div class="input">
+    <input id="i"
+           type="text"
+           name="i"/>
+  </div>
+</div>
+
+<label for="wt">${msg["ingredient.weight"]}</label>
+<div class="field">
+  <div class="input">
+    <input id="wt"
+           type="text"
+           name="wt"/>
+  </div>
+</div>
+</form>
 <a href="/">${msg["on.main"]}</a>
 [/#assign]
 

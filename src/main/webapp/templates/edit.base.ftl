@@ -15,19 +15,28 @@
     </div>
   </div>
 </div>
-<div class="grid">
-  <div class="w25"
-  <label for="i">${msg["rec.create.ingredient"]}</label>
+
+
+
+
+
+
+
+
+
+  <label for="in">${msg["rec.create.ingredient"]}</label>
   <div class="field">
     <div class="field-area">
-      <textarea id="i"
+      <textarea id="in"
                 rows="8"
                 type="text"
-                name="i"></textarea>
+                name="in"></textarea>
     </div>
   </div>
-</div>
-</div>
+
+
+
+
 <div class="fieldbox">
   <label for="s">${msg["rec.create.specification"]}</label>
   <div class="field">
@@ -95,7 +104,7 @@
                     class="select2"
                     name="st">
               [#list conf.times.children as t]
-                <option value="${t.id}" selected="selected">${t.title}</option>
+                <option value="${t.title}" selected="selected">${t.title}</option>
               [/#list]
             </select>
           </div>
@@ -116,8 +125,8 @@
       </div>
     </div>
   </div>
-  <div class="w25">
-    <div class="fieldbox">
+                 <div class="w25">
+                    <div class="fieldbox">
       <label for="c">${msg["rec.create.complexity"]}</label>
       <div class="field">
         <div class="input">
@@ -131,8 +140,3 @@
   </div>
 </div>
 
-<script type="text/javascript">
-  eaui.addListener("#st", function(){
-    $("#st").data("select2-dropdown-css", { "width": "240px" } )
-  });
-</script>

@@ -7,29 +7,23 @@
     <link rel="stylesheet"
           type="text/css"
           media="screen"
-          href="http://cdn.savant.pro/css/themes/cx.css"/>
+          href="/css/main.css"/>
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href=""/>
     <link rel="shortcut icon"
           href="/img/favicon.png"
           type="image/x-icon">
-    <script type="text/javascript"
-            src="http://cdn.savant.pro/js/jquery.js">
-    </script>
+
     <script type="text/javascript"
             src="/locale.js">
     </script>
 
-    <script type="text/javascript"
-            src="http://cdn.savant.pro/js/select2.min.js?1354552487000">
-    </script>
-    <script type="text/javascript"
-            src="http://cdn.savant.pro/js/ea.ui.js">
-    </script>
 
-    <script type="text/javascript">
-      $(function() {
-        eaui.init();
-      });
-    </script>
+
+
+
 
     <title>Simple Circumflex Application</title>
   </head>

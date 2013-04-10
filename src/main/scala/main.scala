@@ -49,6 +49,21 @@ class Main extends Router {
     }
   }
 
+  post("/ingr") = {
+    try {
+      val i = new Ingredient
+
+      i.ingredientName:=param("i").trim
+      i.weight:= param("wt").trim
+      i.save()
+      sendRedirect("/add")
+    } catch {
+      case e: ValidationException =>
+      notices.addErrors(e.errors)
+      sendRedirect("/add")
+    }
+  }
+
   sub("/:id") = {
     //fetch recipe
 

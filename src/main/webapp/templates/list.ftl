@@ -3,12 +3,13 @@
 [#assign content]
 <h1>${msg["list.h1"]}</h1>
 [#list recipes as r]
-<a href="/${r.id}"
-   class="pill primary"
+<li><a href="/${r.id}"
+   class="green"
    title="${r.dishName}">${r.dishName}
-</a>
+</a></li>
 [/#list]
 <a href="/">${msg["on.main"]}</a>
+
 [/#assign]
 
 [#include "layout.ftl"/]
