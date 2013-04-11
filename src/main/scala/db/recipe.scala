@@ -8,6 +8,7 @@ class Recipe
 
   def PRIMARY_KEY: ValueHolder[Long, Recipe] = id
   def relation: Relation[Long, Recipe] = Recipe
+  def ingredients = inverseMany(Ingredient.recipe)
 
   val id = "id".BIGINT.NOT_NULL.AUTO_INCREMENT
   val dishName = "dish_name".HTML.NOT_NULL
@@ -72,7 +73,6 @@ class Ingredient
 object Ingredient
     extends Ingredient
     with Table[Long, Ingredient] {
-  val ingredientUniqueKey = UNIQUE(recipe)
 
   validation
       .notEmpty(_.ingredientName)

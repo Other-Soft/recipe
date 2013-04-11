@@ -5,12 +5,23 @@
 
 <h2>${recipe.dishName}</h2>
 <p>${msg["rec.specification"]} ${recipe.specification}</p>
+
+
+  [#list ingr as ing]
+  <li><a href="/${ing.id}"
+         class="green"
+         title="${ing.ingredientName}">${ing.ingredientName}
+  </a></li>
+  [/#list]
+
 <p>${recipe.wayCooking}</p>
 <p>${msg["rec.create.numberOfPerson"]}: ${recipe.numberOfPerson}</p>
 <p>${msg["rec.create.timeCooking"]}: ${recipe.timeCooking} ${recipe._timeType}</p>
 <p>${msg["rec.create.caloric"]}: ${recipe.caloricValue}</p>
 <p>${msg["rec.create.nationalAttach"]}: ${recipe.nationalAttach}</p>
 <p>${msg["rec.create.complexity"]}: ${recipe.complexity}</p>
+
+
 <div class="left-float">
 <a href="/${recipe.id}/~delete"
    class="btn important inverse"

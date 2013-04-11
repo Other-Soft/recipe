@@ -49,20 +49,8 @@ class Main extends Router {
     }
   }
 
-  post("/ingr") = {
-    try {
-      val i = new Ingredient
 
-      i.ingredientName:=param("i").trim
-      i.weight:= param("wt").trim
-      i.save()
-      sendRedirect("/add")
-    } catch {
-      case e: ValidationException =>
-      notices.addErrors(e.errors)
-      sendRedirect("/add")
-    }
-  }
+
 
   sub("/:id") = {
     //fetch recipe
@@ -74,22 +62,30 @@ class Main extends Router {
     }
     'recipe := recipe
 
-    val ingredient = new Ingredient
-    'ingredient := ingredient
-
-    get("/?") = ftl("/view.ftl")
+    get("/?") = {
+      'ingr := recipe.ingredients.get
+       ftl("/view.ftl")
+    }
 
     get("/ingredient") = ftl("/ingredient.ftl")
 
     get("/~edit") = ftl("/edit.ftl")
 
     post("/ingredient") = {
+      try {
+      val ingredient = new Ingredient
       ingredient.recipe:= recipe
       ingredient.ingredientName:= param("i").trim
       ingredient.weight:= param("iw").trim
       ingredient.save()
       sendRedirect("/" + recipe.id() + "/ingredient")
+    }  catch {
+       case e: ValidationException =>
+          notices.addErrors(e.errors)
+          sendRedirect("/" + recipe.id() + "/ingredient")
+      }
     }
+
 
     post("/?") = {
       recipe.dishName:=param("n").trim
