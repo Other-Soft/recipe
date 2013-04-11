@@ -41,7 +41,7 @@ class Main extends Router {
       r.caloricValue:= param("v").trim
       r.complexity:= param("c").trim
       r.save()
-      sendRedirect("/" + r.id())
+      sendRedirect("/" + r.id() + "/ingredient")
     } catch {
       case e: ValidationException =>
         notices.addErrors(e.errors)
@@ -74,9 +74,23 @@ class Main extends Router {
     }
     'recipe := recipe
 
+    val ingredient = new Ingredient
+    'ingredient := ingredient
+
     get("/?") = ftl("/view.ftl")
 
+    get("/ingredient") = ftl("/ingredient.ftl")
+
     get("/~edit") = ftl("/edit.ftl")
+
+    post("/ingredient") = {
+      ingredient.recipe:= recipe
+      ingredient.ingredientName:= param("i").trim
+      ingredient.weight:= param("iw").trim
+      ingredient.save()
+      sendRedirect("/" + recipe.id() + "/ingredient")
+    }
+
     post("/?") = {
       recipe.dishName:=param("n").trim
       recipe.nationalAttach:= param("na").trim

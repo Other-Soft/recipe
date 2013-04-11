@@ -23,7 +23,7 @@ class Recipe
 }
 
 object Recipe extends Recipe with Table[Long, Recipe] {
-  val uniqueDishname = UNIQUE(dishName)
+  val uniqueDishName = UNIQUE(dishName)
 
   validation
       .unique(_.dishName)
@@ -72,12 +72,11 @@ class Ingredient
 object Ingredient
     extends Ingredient
     with Table[Long, Ingredient] {
-  val ingredientUniqueKey = UNIQUE(ingredient)
+  val ingredientUniqueKey = UNIQUE(recipe)
 
   validation
       .notEmpty(_.ingredientName)
       .notEmpty(_.weight)
-
 }
 
 

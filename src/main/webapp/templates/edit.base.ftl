@@ -16,27 +16,6 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-  <label for="in">${msg["rec.create.ingredient"]}</label>
-  <div class="field">
-    <div class="field-area">
-      <textarea id="in"
-                rows="8"
-                type="text"
-                name="in"></textarea>
-    </div>
-  </div>
-
-
-
-
 <div class="fieldbox">
   <label for="s">${msg["rec.create.specification"]}</label>
   <div class="field">
