@@ -68,6 +68,7 @@ class Ingredient
   val ingredientName = "ingredient_name".HTML.NOT_NULL
   val ingredientType = "ingr_Type".HTML
   val weight = "weight".HTML.NOT_NULL
+  val weightType = "weight_type".HTML.NOT_NULL
 }
 
 object Ingredient

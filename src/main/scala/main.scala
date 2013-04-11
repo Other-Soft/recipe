@@ -77,6 +77,7 @@ class Main extends Router {
       ingredient.recipe:= recipe
       ingredient.ingredientName:= param("i").trim
       ingredient.weight:= param("iw").trim
+      ingredient.weightType:= param("iwt").trim
       ingredient.save()
       sendRedirect("/" + recipe.id() + "/ingredient")
     }  catch {

@@ -2,6 +2,6 @@
 
 <weights>
   <weight id="kg"/>
-  <weight id="g"/>
+  <weight id="gr"/>
   <weight id="l"/>
 </weights>
