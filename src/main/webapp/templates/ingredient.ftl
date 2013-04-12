@@ -8,16 +8,19 @@
 <form action="/${recipe.id}/ingredient"
       method="post"
       class="submission" >
-  <div class="submits margin-top centered">
-
-      [#include "edit.ingredient.base.ftl"/]
-
-    <input type="submit"
-           class="btn primary inverse"
-           value="${msg["ingr.add"]}"/>
-  </div>
+  [#include "edit.ingredient.base.ftl"/]
+  <input type="submit"
+         class="btn primary inverse"
+         value="${msg["ingr.add"]}"/>
 </form>
 <a href="/${recipe.id}">${msg["view.h1"]}</a>
+
+<p>${msg["added.ingredient"]}</p>
+  [#list ingr as ing]
+  <li><a href="/${recipe.id}/${ing.id}"
+         title="${ing.ingredientName}">${ing.ingredientName}
+  </a></li>
+  [/#list]
 [/#assign]
 
 [#include "layout.ftl"/]

@@ -9,6 +9,7 @@
   <h3>${msg["ingredients"]}</h3>
   [#list ingr as ing]
   <li><a title="${ing.ingredientName}">${ing.ingredientName}
+     <p>${ing.weight}</p>
   </a></li>
   [/#list]
 
@@ -22,22 +23,20 @@
 
 <div class="left-float">
 <a href="/${recipe.id}/~delete"
-   class="btn important inverse"
+   class="btn"
    title="${msg['rec.delete']}">${msg["rec.delete.mat"]}
 </a>
 </div>
 <div class="left-float">
   <a href="/${recipe.id}/~edit"
-     class="btn primary inverse"
+     class="btn"
      title="${msg['rec.edit']}">${msg["rec.edit"]}
   </a>
 </div>
 <br/>
-<div class="centered margin-top">
   <a href="/list"
      title="${msg['rec.list']}">${msg['rec.list']}
   </a>
-</div>
 
 [/#assign]
 

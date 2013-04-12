@@ -11,11 +11,7 @@ class Main extends Router {
 
   get("/") = ftl("/index.ftl")
 
-  get("/locale.js") = {
-    serveLastModified(msg.lastModified)
-    response.contentType("application/javascript")
-    ftl("/locale/locale.js.ftl")
-  }
+
 
   get("/add") = {
 
@@ -50,7 +46,7 @@ class Main extends Router {
   }
 
   get("/search") = {
-    'search := Recipe.findByDishname(param("sh").trim)
+    'search := Recipe.findByTimecooking(param("sh").trim)
     ftl("/search.list.ftl")
   }
 

@@ -49,7 +49,7 @@ object Recipe extends Recipe with Table[Long, Recipe] {
   def findByTimecooking(Timecooking: String) =
     SELECT(r.*)
         .FROM(r)
-        .WHERE(r.timeCooking LLIKE(Timecooking + "%"))
+        .WHERE(r.dishName LLIKE(Timecooking + "%"))
         .list()
 }
 

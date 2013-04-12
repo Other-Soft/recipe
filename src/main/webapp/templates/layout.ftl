@@ -20,11 +20,6 @@
             src="/locale.js">
     </script>
 
-
-
-
-
-
     <title>Simple Circumflex Application</title>
   </head>
   <body>

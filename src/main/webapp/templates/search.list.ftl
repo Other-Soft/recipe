@@ -9,7 +9,7 @@
          title="${sl.dishName}">${sl.dishName}
   </a></li>
   [/#list]
-<a href="/">${msg["on.main"]}</a>
+<a href="/list">${msg["on.main"]}</a>
 
 [/#assign]
 

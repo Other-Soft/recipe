@@ -9,11 +9,11 @@
       method="post"
       class="submission" >
   [#include "edit.base.ftl"/]
-  <div class="submits margin-top centered">
+
     <input type="submit"
-           class="btn primary inverse"
+           class="btn"
            value="${msg['rec.add']}"/>
-  </div>
+
 </form>
 
 

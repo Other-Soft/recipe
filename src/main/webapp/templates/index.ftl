@@ -3,7 +3,6 @@
 [#assign content]
 <h1>${msg["main.title"]}</h1>
 <p>${msg["index.p1"]}</p>
-<div class="right-float">
   <a href="/add"
      title="${msg['rec.add']}"
      class="btn primary inverse"> ${msg['rec.add']}
@@ -12,7 +11,6 @@
      class="btn primary "
      title="${msg['rec.list']}">${msg['rec.list']}
   </a>
-</div>
 <ul>
   <li> [#include "locale/rec.local.index.ftl"/]
   </li>

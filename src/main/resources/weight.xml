@@ -4,4 +4,5 @@
   <weight id="kg"/>
   <weight id="gr"/>
   <weight id="l"/>
+  <weight id="num"/>
 </weights>

@@ -7,7 +7,7 @@
     [#list ingr as ing]
     <li><a href="/${recipe.id}/${ing.id}"
            class="green"
-           title="${msg["rec.edit"]}:${ing.ingredientName}">${msg["rec.edit"]}:
+           title="${msg["ingr.edit"]}:${ing.ingredientName}">${msg["ingr.edit"]}:
                   ${ing.ingredientName}
     </a></li>
     [/#list]
