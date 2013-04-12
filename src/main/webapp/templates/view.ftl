@@ -9,7 +9,7 @@
   <h3>${msg["ingredients"]}</h3>
   [#list ingr as ing]
   <li><a title="${ing.ingredientName}">${ing.ingredientName}
-     <p>${ing.weight}</p>
+     <p>${ing.weight} ${ing.weightType}</p>
   </a></li>
   [/#list]
 
