@@ -62,14 +62,21 @@ class Main extends Router {
     }
     'recipe := recipe
 
-    get("/?") = {
-      'ingr := recipe.ingredients.get
-       ftl("/view.ftl")
-    }
+    'ingr := recipe.ingredients.get
+
+    get("/?") = ftl("/view.ftl")
 
     get("/ingredient") = ftl("/ingredient.ftl")
 
+    get("/listingr") = ftl("listingr.ftl")
+
     get("/~edit") = ftl("/edit.ftl")
+
+    get("/~delete") = ftl("/delete.ftl")
+    delete("/?") = {
+      recipe.DELETE_!()
+      sendRedirect("/list")
+    }
 
     post("/ingredient") = {
       try {
@@ -87,6 +94,27 @@ class Main extends Router {
       }
     }
 
+    sub("/:id") = {
+      val ingredient = try {
+        Ingredient.get(param("id").toLong).getOrElse(sendError(404))
+      } catch {
+        case e: NumberFormatException => sendError(404)
+      }
+      'ingredient := ingredient
+      get("/?") = ftl("/editIngr.ftl")
+
+      post("/?") = {
+        ingredient.ingredientName:= param("i").trim
+        ingredient.weight:= param("iw").trim
+        ingredient.weightType:= param("iwt").trim
+        ingredient.save()
+        sendRedirect("/" + recipe.id() + "/listingr")
+      }
+      delete("/?") = {
+        ingredient.DELETE_!()
+        sendRedirect("/" + recipe.id() + "/listingr")
+      }
+    }
 
     post("/?") = {
       recipe.dishName:=param("n").trim
@@ -102,11 +130,7 @@ class Main extends Router {
       sendRedirect("/"+ recipe.id())
     }
 
-    get("/~delete") = ftl("/delete.ftl")
-    delete("/?") = {
-      recipe.DELETE_!()
-      sendRedirect("/list")
-    }
+
   }
 
 }

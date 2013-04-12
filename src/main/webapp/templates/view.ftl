@@ -6,15 +6,13 @@
 <h2>${recipe.dishName}</h2>
 <p>${msg["rec.specification"]} ${recipe.specification}</p>
 
-
+  <h3>${msg["ingredients"]}</h3>
   [#list ingr as ing]
-  <li><a href="/${ing.id}"
-         class="green"
-         title="${ing.ingredientName}">${ing.ingredientName}
+  <li><a title="${ing.ingredientName}">${ing.ingredientName}
   </a></li>
   [/#list]
 
-<p>${recipe.wayCooking}</p>
+<p>${msg["rec.create.wayCooking"]}: ${recipe.wayCooking}</p>
 <p>${msg["rec.create.numberOfPerson"]}: ${recipe.numberOfPerson}</p>
 <p>${msg["rec.create.timeCooking"]}: ${recipe.timeCooking} ${recipe._timeType}</p>
 <p>${msg["rec.create.caloric"]}: ${recipe.caloricValue}</p>
