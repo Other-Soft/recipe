@@ -2,6 +2,8 @@
 
 [#assign content]
 <h1>${msg["ingr.list"]} - ${recipe.dishName}</h1>
+<a href="/${recipe.id}/ingredient">${msg["ingr.add"]}</a>
+<br/>
     [#list ingr as ing]
     <li><a href="/${recipe.id}/${ing.id}"
            class="green"

@@ -45,7 +45,7 @@ object Recipe extends Recipe with Table[Long, Recipe] {
     SELECT(r.*)
         .FROM(r)
         .WHERE(r.dishName EQ dishname)
-        .unique()
+        .list()
   def findByTimecooking(Timecooking: String) =
     SELECT(r.*)
         .FROM(r)

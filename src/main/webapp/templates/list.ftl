@@ -1,6 +1,24 @@
 [#ftl]
 
 [#assign content]
+
+<form action="/search"
+      method="get"
+      class="submission" >
+
+  <div class="field">
+    <div class="input">
+      <input id="sh"
+             type="text"
+             name="sh"/>
+    </div>
+    <input type="submit"
+           class="btn"
+           value="${msg["search"]}"/>
+
+</form>
+
+
 <h1>${msg["list.h1"]}</h1>
 [#list recipes as r]
 <li><a href="/${r.id}"

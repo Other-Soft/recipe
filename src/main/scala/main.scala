@@ -49,7 +49,10 @@ class Main extends Router {
     }
   }
 
-
+  get("/search") = {
+    'search := Recipe.findByDishname(param("sh").trim)
+    ftl("/search.list.ftl")
+  }
 
 
   sub("/:id") = {
