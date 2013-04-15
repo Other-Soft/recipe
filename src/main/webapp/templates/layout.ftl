@@ -17,7 +17,15 @@
           type="image/x-icon">
 
     <script type="text/javascript"
+            src="http://code.jquery.com/jquery-1.9.1.js">
+    </script>
+
+
+    <script type="text/javascript"
             src="/locale.js">
+    </script>
+    <script type="text/javascript"
+            src="http://code.jquery.com/jquery-migrate-1.1.0.js">
     </script>
 
     <title>Simple Circumflex Application</title>

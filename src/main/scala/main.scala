@@ -22,7 +22,7 @@ class Main extends Router {
     'recipes := Recipe.all
     ftl("/list.ftl")
   }
-
+  get("/test") = ftl("test.ftl")
 
   post("/?") = {
     try {
@@ -36,6 +36,7 @@ class Main extends Router {
       r._timeType:= param("st").trim
       r.caloricValue:= param("v").trim
       r.complexity:= param("c").trim
+//      param.list()
       r.save()
       sendRedirect("/" + r.id() + "/ingredient")
     } catch {
@@ -116,7 +117,7 @@ class Main extends Router {
     }
 
     post("/?") = {
-      recipe.dishName:=param("n").trim
+      recipe.dishName := param("n").trim
       recipe.nationalAttach:= param("na").trim
       recipe.numberOfPerson:= param("p").trim
       recipe.specification:= param("s").trim

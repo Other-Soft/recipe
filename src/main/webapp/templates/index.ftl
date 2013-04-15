@@ -25,6 +25,26 @@
   </li>
 </ul>
 <p style="font-weight:bold">${msg["index.p2"]}</p>
+
+<input type="button" onclick="add_input()" value="Добавить еще один инпут">
+<form>
+  <div id="inputi"><input name="my_input"></div>
+</form>
+<script language="javascript">
+  [#--// Помещаем созданный слой в уже имеющийся элемент "content" на странице.--]
+  $('#content').append('<div class="my_class">Текст</div>')
+
+  [#--// Создаем INPUT в слое "content"--]
+  $('#content').append('<input type="text" name="user" value="Введите свое имя" />')
+  // Создаем элемент DIV
+  var input = $('<div>', {
+    id: 'myId',
+    class: 'myClass'
+  });
+
+  // Помещаем в слой "content"
+  $('#content').append(input);
+</script>
 [/#assign]
 
 [#include "layout.ftl"/]
