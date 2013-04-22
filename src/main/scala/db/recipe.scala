@@ -78,6 +78,7 @@ object Ingredient
   validation
       .notEmpty(_.ingredientName)
       .notEmpty(_.weight)
+
 }
 
 
